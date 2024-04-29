@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>VamoSairComigo?</title>
+</head>
+
+
+<body>
+    <div id="conteudo"> 
+        <img src="https://cdn-icons-png.flaticon.com/512/2/2267.png" style="width: 70%;">
+        <h2>Aceita sair comigo???</h2>
+        <h3 style="
+        top: 75%;
+        position: absolute;
+        left: 30%;
+        right: 30%;">by RickBortolotti</h3>
+
+        <button class="btn" onclick="sim()">Sim</button>
+        <button class="btn" onmouseover="desvia(this)" onclick="desvia(this)">Não</button>
+
+        
+    
+
+    </div>
+</body>
+
+
+<style>
+    #conteudo {
+    BACKGROUND: #db6767;
+    WIDTH: 100%;
+    HEIGHT: 100%;
+    POSITION: FIXED;
+    TOP: 0;
+    LEFT: 0;
+    PADDING: 10PX;
+    text-align: center;
+    font-family: sans-serif
+    }
+
+    .btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 80px;
+    border-radius: 10px;
+
+    
+}
+    
+</style>
+
+<script>
+  function sim(){
+    alert("Você aceitou sair comigo! 🤍")
+  }
+
+  function desvia(t){
+    var btn = t;
+    btn.style.position = 'absolute';
+    btn.style.top = geraposicao(10, 90);
+    btn.style.right = geraposicao(10,90);
+    console.log("opa, desviei...");
+  }
+
+  randomNumber(0, 100);
+
+  function geraposicao(min, max) {
+    return (Math.random() * (max - min) + min) + "%";
+}
+
+
+  
+
+</script>
+</html>
+
+
+position: absolute;
+    top: 50%;
+    right: 30%;
